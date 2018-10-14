@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link <link rel="stylesheet" href="css/navbar.css"> 
+  <script src="js/modernizr.js"></script>
+  <style type="text/css">
+    
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    font-size: 17px;
+}
+
+#myVideo {
+    position: fixed;
+    background: transparent;
+    right: 5;
+    bottom: 5;
+    left: 5;
+    top: 5;
+    min-width: 100%; 
+    min-height: 100%;
+    opacity: 1
+}
+
+.content {
+    position: fixed;
+    bottom: 2%;
+    right: 2%;   
+    color: #f1f1f1;
+    width: 100%;
+    padding-bottom: 0px;
+    padding-right: 10px;
+}
+
+#myBtn {
+    width: 250px;
+    font-size: 22px;
+    padding: 5px;
+    background: rgb(204, 4, 4);
+    color: #fff;
+    border: 2px solid;
+    right: 1%;
+    bottom: 1%;
+    cursor: pointer;
+    
+}
+#myBtn:hover {
+    background: rgb(255, 255, 265);
+    color: #cc0404;
+    transition: 0.01s;
+    
+}
+.logo {
+  position: absolute;
+  left: 1%;
+  top: 1%;
+  background: transparent;
+
+}
+.foreground {
+    position: fixed;
+    padding-bottom: 2000px
+    padding-top: 200px;
+    padding-left: 150px; 
+  }
+  </style>  
+
+</head>
+<body>
+  <video autoplay muted loop id="myVideo">
+    <source src="images/background.mp4" type="video/mp4">
+    Your browser does not support HTML5 video.
+  </video>
+
+  <div class="content" align="right">
+    <a href="https://www.facebook.com/">
+      <button id="myBtn" type="submit"> REGISTER/LOGIN </button>
+    </a>
+  </div>
+  <a href="https://www.facebook.com/">
+    <div class = "logo"> 
+      <img src="images/logo.png" height="150" width="150">
+    </div>
+  </a>
+
+  <div class="foreground">
+   <img src="images/foreground.png" align="centre">
+  </div>
+  <nav class="cd-stretchy-nav">
+    <a class="cd-nav-trigger" href="">
+      Menu
+      <span aria-hidden="true"></span>
+    </a>
+
+    <ul>
+      <li><a href="https://www.facebook.com/" class="active"><span>Home</span></a></li>
+      <li><a href="https://www.facebook.com/"><span>Events</span></a></li>
+      <li><a href="https://www.facebook.com/"><span>About US</span></a></li>
+      <li><a href="https://www.facebook.com/"><span>Policies</span></a></li>
+      <li><a href="https://www.facebook.com/"><span>Contact</span></a></li>
+    </ul>
+
+    <span aria-hidden="true" class="stretchy-nav-bg"></span>
+  </nav>
+<script src="js/jquery-2.1.4.js"></script>
+  <script src="js/main.js"></script> 
+
+</body>
+</html>
